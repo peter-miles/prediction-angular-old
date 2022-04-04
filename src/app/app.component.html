@@ -9,12 +9,67 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  
+
 <div class="container">
-  <div class="banner-image">
-    <p>test</p>
+  <div class="banner-image">   
   </div>
-  <h1>My First Bootstrap Page</h1>
+
+  
+
+  <h1>NBA Predictions App</h1>
+  <hr>
+
+  <div class="topnav">
+  <a class="active" href="#view-players">View Players</a>
+  <a href="create-teams">Create Teams</a>
+  <a href="view-teams">View Teams</a>
+</div>
+
+<br>
+
+<div class="search">
+  <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search Players" name="search-bar">
+  <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+</div>
+
+<div id="table">
+<div class="container mt-3">          
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Team</th>
+      <th>Minutes Played</th>
+      <th>Plus Minus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+      <td>5</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+</div>
+
   <p>This part is inside a .container class.</p>
   <p>The .container class provides a responsive fixed width container.</p>
   <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
