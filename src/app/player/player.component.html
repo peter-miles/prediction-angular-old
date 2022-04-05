@@ -1,0 +1,31 @@
+<div class="search">
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search players"
+      name="search-bar"
+    />
+    <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Team</th>
+      <th scope="col">Minutes</th>
+      <th scope="col">+/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <th scope="row">{{ player.playerId }}</th>
+      <td>{{ player.playerName }}</td>
+      <td>{{ player.playerTeam }}</td>
+      <td>{{ player.playerMinutes }}</td>
+      <td>{{ player.playerPlusMinus }}</td>
+    </tr>
+  </tbody>
+</table>
